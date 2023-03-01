@@ -1,0 +1,11 @@
+{
+    "name": "Price of ETH",
+    "version": "1.0.0",
+    "description": "This is an extnesion to find the price of ETH",
+    "manifest_version": 3,
+    "author": "Justin Signo",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": ""
+    }
+}
