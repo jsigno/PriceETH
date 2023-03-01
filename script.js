@@ -10,8 +10,7 @@ async function fetchData() {
     const res = await fetch('https://coinranking1.p.rapidapi.com/coin/razxDUgYGNAdQ/price?referenceCurrencyUuid=yhjMzLPhuIDl', options)
     const record = await res.json()
 
-    const price = Math.ceil(record.data.price);
-    console.log(price);
+    const price = (Math.ceil(record.data.price * 100) / 100).toFixed(2);
   
     document.getElementById("Price").innerHTML = "$" + price;
 }
